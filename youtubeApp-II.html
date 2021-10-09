@@ -200,7 +200,7 @@
         Object.freeze(types)
 
         function youtubeVideos(){
-            return fetch(`https://youtube.googleapis.com/youtube/v3/search?q=javaScript&location=India&maxResults=20&key=AIzaSyDJgMUF85Zi1t4EWmOVcnc3eSjW1GnLc9c`)
+            return fetch(`https://youtube.googleapis.com/youtube/v3/search?&maxResults=20&q=songs&key=AIzaSyDQGKzoQCHxdA7WUAtsiJMvIC9PlmrB81M`)
             .then(res => res.json())
             
         }
@@ -235,7 +235,7 @@
         })
 
         function getYoutubeSearchResults(q){
-            return fetch(`https://youtube.googleapis.com/youtube/v3/search?q=${q}&location=India&maxResults=20&key=AIzaSyDJgMUF85Zi1t4EWmOVcnc3eSjW1GnLc9c`)
+            return fetch(`https://youtube.googleapis.com/youtube/v3/search?&maxResults=20&q=${q}&key=AIzaSyDQGKzoQCHxdA7WUAtsiJMvIC9PlmrB81M`)
             .then(res => res.json())
         }
 
